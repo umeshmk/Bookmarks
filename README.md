@@ -25,4 +25,11 @@ How big this could get if the community share their experiences on great resourc
 
 Just create or comment on issues.
 
+# Credits:
+
+- *Domain Ranking* - We have used this [openpagerank](https://www.domcop.com/openpagerank/documentation) API for ranking our domains list.
+
+- *Favicons* - Using google's api `https://s2.googleusercontent.com/s2/favicons?domain_url=`
+
+
 **Copyright 2020 Umesh Kadam**
