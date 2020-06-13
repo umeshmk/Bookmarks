@@ -6,7 +6,9 @@ Finest collection of utilitarian websites for web developers.
 
 ## Why ?
 
-"To make a right choice we must be aware of what options we have." We often get lost in search engine, Blogs, Videos, Books, etc. Each individual with its own perceptions often creates a vague picture. I have tried to to make things crystal clear by using metrics - Domain ranking & GitHub Stargazers.
+_"To make a right choice we must be aware of what options we have."_
+
+We often get lost in search engine, Blogs, Videos, Books, etc. Each individual with its own perceptions often creates a vague picture. I have tried to to make things crystal clear by using metrics - Domain ranking & GitHub Stargazers.
 
 ## When ?
 
@@ -27,9 +29,8 @@ Just create or comment on issues.
 
 # Credits:
 
-- *Domain Ranking* - We have used this [openpagerank](https://www.domcop.com/openpagerank/documentation) API for ranking our domains list.
+- _Domain Ranking_ - We have used this [openpagerank](https://www.domcop.com/openpagerank/documentation) API for ranking our domains list.
 
-- *Favicons* - Using google's api `https://s2.googleusercontent.com/s2/favicons?domain_url=`
-
+- _Favicons_ - Using google's api `https://s2.googleusercontent.com/s2/favicons?domain_url=`
 
 **Copyright 2020 Umesh Kadam**
