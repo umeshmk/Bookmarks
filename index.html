@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookmarks - Finest Collection For Web Developers</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="description"
+      content="Finest collection of Utilitarian websites for Web Developers
+    Prioritized on Domain Rankings & Github Stargazers"
+    />
+    <!-- meta-og/twitter -->
+    <meta
+      property="og:title"
+      content="Bookmarks - Finest Collection For Web Developers"
+    />
+    <meta
+      property="og:description"
+      content="Finest collection of Utilitarian websites for Web Developers
+    Prioritized on Domain Rankings & Github Stargazers"
+    />
+    <meta
+      property="og:image"
+      content="http://umeshmk.github.io/Bookmarks/img/og.png"
+    />
+    <meta
+      property="twitter:title"
+      content="Bookmarks - Finest Collection For Web Developers"
+    />
+    <meta
+      property="twitter:description"
+      content="Finest collection of Utilitarian websites for Web Developers
+    Prioritized on Domain Rankings & Github Stargazers"
+    />
+    <meta
+      property="twitter:image"
+      content="http://umeshmk.github.io/Bookmarks/img/og.png"
+    />
+    <meta name="twitter:site" content="@umesh_m_kadam" />
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class=" ">
+    <!-- vuejs app -->
+    <div class="" id="app">
+      <!-- HEADER -->
+      <header
+        class="flex flex-col items-center min-h-screen w-full pt-16 bg-gray-10"
+      >
+        <div class="" id="logo">
+          <img class="w-2/5 mb-1 mt-10 mx-auto" src="img/logo.png" alt="logo" />
+        </div>
+        <div
+          class="text-5xl lg:text-6xl ext-pink-700 uppercase font-2 font-medium"
+        >
+          bookmarks
+        </div>
+        <div class="flex flex-row hidden pb-10">
+          <div class="bg-pink-700 my-4 mx-4 w-1 pb-1 rounded-lg"></div>
+          <div class="bg-pink-700 my-3 mx-4 w-1 pb-1 rounded-lg"></div>
+          <div class="bg-pink-700 my-2 mx-4 w-1 pb-1 rounded-lg"></div>
+          <div class="bg-pink-700 my-1 mx-4 w-1 pb-1 rounded-lg"></div>
+          <div class="bg-pink-700 my-2 mx-4 w-1 pb-1 rounded-lg"></div>
+          <div class="bg-pink-700 my-3 mx-4 w-1 pb-1 rounded-lg"></div>
+          <div class="bg-pink-700 my-4 mx-4 w-1 pb-1 rounded-lg"></div>
+        </div>
+        <div
+          class="text-2xl lg:text-3xl text-gray-900 text-center font-3 pb-10"
+        >
+          <div class="text-gray-700 text-base font-1 font-medium px-2">
+            Only Bookmark you will ever need for evaluating your options
+          </div>
+          <vc-line></vc-line>
+          Finest collection of
+          <span class="underline"> Utilitarian</span>
+          websites for Web Developers
+          <br />
+          Prioritized on Domain Rankings &
+          <span class="underline">
+            Github Stargazers
+          </span>
+          <br />
+          <div class="text-pink-800 text-3xl font-2 ont-bold pt-10 pb-16">
+            Collected, Organized, Tagged
+            <span class="text-black">&</span> Prioritized
+          </div>
+          <div class="hidden lg:block font-1 pt-10">
+            Get Started <br />
+            <i
+              class="fas fa-chevron-circle-down text-pink-700 text-4xl cursor-pointer hover:text-pink-600 pt-6"
+              @click="mGetStarted()"
+            ></i>
+          </div>
+        </div>
+
+        <!-- Github -->
+        <div
+          class="absolute top-0 right-0 text-gray-900 my-2 mr-5 w-14 text-center font-1"
+        >
+          <a href="https://github.com/umeshmk/Bookmarks" target="_blank">
+            <!-- <img class="w-20 " src="img/github-white.png" alt="github-logo" /> -->
+            <i class="fab fa-github text-5xl ext-pink-700"></i>
+            <br />
+            Github
+          </a>
+        </div>
+      </header>
+
+      <!-- Hidden on mobile -->
+      <div
+        class="block lg:hidden font-0 p-10 text-gray-300 bg-gray-900 text-3xl text-center"
+      >
+        For better experience please visit us on Desktop.
+      </div>
+
+      <!-- Navbar -->
+      <nav class="hidden lg:block">
+        <vc-navbar :p-categories="cCategories"></vc-navbar>
+      </nav>
+
+      <!-- sidebar + Bookmarks -->
+      <div class="hidden lg:flex bg-indigo-10 min-h-screen" id="start">
+        <div class="w-2/12 bg-gray-900 border-r-2 py-10">
+          <vc-sidebar
+            :p-category="dSelectedCategory"
+            :p-all-data="cSelectedCategoryData"
+          ></vc-sidebar>
+        </div>
+        <div class="w-10/12 px-12 bg-gray-100 overflow-hidden py-10">
+          <vc-bookmarks
+            :p-tag="dSelectedTag"
+            :p-all-data="cSelectedCategoryData"
+          ></vc-bookmarks>
+        </div>
+      </div>
+
+      <!-- SPONSERS -->
+      <div
+        class="font-3 text-gray-600 font-bold bg-gray-200 py-40 text-center text-2xl lg:text-3xl capitalize"
+      >
+        Be a Sponser <br />& <br />
+        Bookmark your place here
+        <vc-line></vc-line>
+      </div>
+    </div>
+
+    <!-- QUOTE -->
+    <div
+      class="flex justify-center text-xl text-gray-300 font-0 bg-gray-900 py-10"
+    >
+      <div class="p-5 lg:w-1/2">
+        <i class="fas fa-quote-left pr-3"></i>
+        <span>
+          It is important to view knowledge as sort of a semantic tree — make
+          sure you understand the fundamental principles, ie the trunk and big
+          branches, before you get into the leaves/details or there is nothing
+          for them to hang on to
+        </span>
+        <span class="text-pink-400"> - Elon Musk</span>
+        <i class="fas fa-quote-right pl-3"></i>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="flex flex-col items-center p-10 lg:p-20 bg-gray-200 font-1">
+      <div class="text-center py-4">
+        Did I missed something ? <br />
+        Can't find your favourite one ? Let me know
+        <br />
+      </div>
+      <!-- Github -->
+      <div class="text-2xl text-gray-800 font-bold my-2 mr-5">
+        <a href="https://github.com/umeshmk/Bookmarks" target="_blank">
+          <i class="fab fa-github text-4xl -mb-10"></i>
+          Github
+        </a>
+      </div>
+      <div>
+        <img
+          class="pt-10 pb-5 rounded-full"
+          src="https://avatars.githubusercontent.com/u/19268386?v=3&s=50"
+          alt=""
+        />
+      </div>
+      <div class="text-gray-900 font-thin my-2 mr-5">
+        Made with <i class="fas fa-heart text-red-500 text-xl -mb-10"></i> by
+        <a
+          class="text-blue-600 font-bold"
+          href="https://twitter.com/umesh_m_kadam"
+          target="_blank"
+        >
+          Umesh Kadam
+        </a>
+      </div>
+    </footer>
+    <script src="js/library.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
