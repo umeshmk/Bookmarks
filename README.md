@@ -23,6 +23,13 @@ Open source & hosted on GitHub pages.
 Made mistakes & learnt from them.
 How big this could get if the community share their experiences on great resources ?
 
+# Source Code
+
+> This repo is a build of Frontend repo.
+
+- Backend - [https://github.com/umeshmk/bookmarks-db](https://github.com/umeshmk/bookmarks-db)
+- Frontend - [https://github.com/umeshmk/Bookmarks-dev](https://github.com/umeshmk/Bookmarks-dev)
+
 # Contribution
 
 Just create or comment on issues.
